@@ -2,7 +2,9 @@
 
 ## 概要
 
-**nodularity.py**は、球状黒鉛鋳鉄品（FCD）の組織画像について、JIS G5502-2022 球状黒鉛鋳鉄品のISO法およびJIS法によって黒鉛球状化率を求めるプログラムです。ここで、組織画像は下図のようなものです。
+**nodularity.py**nodularity.py es un programa que calcula la tasa de nodularidad del grafito utilizando el método ISO JIS G5502-2022 y el método JIS para productos de hierro fundido de grafito esferoidal (FCD). Aquí, la imagen del tejido se muestra a continuación.
+
+
 <br><br>
 
 <img src="https://user-images.githubusercontent.com/91704559/202900113-c0a879b3-b298-4bd7-a2df-a03c2ddf4c07.jpg" width=400>
