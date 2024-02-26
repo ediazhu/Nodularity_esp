@@ -1,6 +1,6 @@
 # nodularity.py
 
-## 概要
+## Descripcion General
 
 **nodularity.py**nodularity.py es un programa que calcula la tasa de nodularidad del grafito utilizando el método ISO JIS G5502-2022 y el método JIS para productos de hierro fundido de grafito esferoidal (FCD). Aquí, la imagen del tejido se muestra a continuación.
 
@@ -9,31 +9,34 @@
 
 <img src="https://user-images.githubusercontent.com/91704559/202900113-c0a879b3-b298-4bd7-a2df-a03c2ddf4c07.jpg" width=400>
 <br>
-図 球状黒鉛鋳鉄品の組織画像
+Figura: Imagen de la estructura de productos de fundición de grafito esferoidal
 <br><br>
 
-## 動作環境
+## Entorno operativo
 
-**nodularity.py**は、[Python](https://www.python.jp/)がインストールされたパソコンで動作します。このプログラムの実行には、画像処理のライブラリ[OpenCV](https://opencv.org/)が必要です。
+**nodularity.py**は、[Python](https://www.python.jp/)Funciona en una computadora con instalado. Para ejecutar este programa, se requiere una biblioteca de procesamiento de imágenes.
+
+Ícono de validado por la comunidad[OpenCV](https://opencv.org/)se requiere.
 <br><br>
 
 ## 使い方
 
-1. **nodularity.py**を適当なフォルダに置きます。
-2. **nodularity.py**の18行目以降の環境設定の**iDir**と**min_grainsize**の値を設定します。<br>
-ここで、**iDir**はダイアログ「画像ファイルを選んでください」で最初に表示させたいフォルダを設定し、**min_grainsize**は「最小黒鉛のサイズ」÷「画像の幅」の値を設定します。
-3. 上記2.の**iDir**に設定したフォルダに上図のような組織画像を格納して**nodularity.py**を実行します。**nodularity.py**と組織画像は全角文字を含まないフォルダに格納してください。
-4. プログラムを実行すると最初にダイアログ「画像ファイルを選んでください」が表示されるので、球状化率を求める組織画像を選択します。**min_grainsize**が同じ組織画像でしたら複数選択しても構いません。画像ファイルを選択して開くをクリックして少し待つと、球状化率を計算して以下のファイルを作成します。
+1. Coloque **nodularity.py** en una carpeta adecuada.
+2. Establezca los valores de **iDir** y **min_grainsize** en la configuración del entorno a partir de la línea 18 de **nodularity.py**. <br>
+Aquí, **iDir** establece la carpeta que desea mostrar primero en el cuadro de diálogo "Seleccione un archivo de imagen", y **min_grainsize** es el valor de "tamaño mínimo de grafito" ÷ "ancho de imagen".
+3. Guarde la imagen del tejido que se muestra arriba en la carpeta configurada en **iDir** en 2. arriba y ejecute **nodularity.py**. Guarde **nodularity.py** y las imágenes de la organización en una carpeta que no contenga caracteres de doble byte.
+4. Cuando ejecute el programa, primero se mostrará el cuadro de diálogo "Seleccione un archivo de imagen", así que seleccione la imagen del tejido para la que desea determinar la tasa de esferoidización. Puede seleccionar varias imágenes de tejido con el mismo **min_grainsize**. Seleccione el archivo de imagen, haga clic en Abrir y espere un momento para calcular la tasa de esferoidización y crear el archivo a continuación.
 
-- **nodularity_日付時刻.csv** ... ファイル名や球状化率などのデータ
-- **画像ファイル名_ISO.jpg** ... 黒鉛形状の判定結果(ISO)
-- **画像ファイル名_JIS.jpg** ... 黒鉛形状の判定結果(JIS)
 
-## ご利用に関して
+**nodularity_datetime.csv**... Datos como el nombre del archivo y la tasa de esferoidización
+- **Nombre del archivo de imagen_ISO.jpg** ... Resultado de la determinación de la forma del grafito (ISO)
+- **Nombre del archivo de imagen_JIS.jpg** ... Resultado de la determinación de la forma del grafito (JIS)
 
-使用結果について当方は責任は負いません。
+## Respecto al uso
 
-## 開発環境
+No somos responsables de los resultados del uso.
+
+## Entorno de desarrollo
 - Windows11
 - VSC 1.7.3.1
 - Python 3.8.10
